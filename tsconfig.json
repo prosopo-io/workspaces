@@ -1,0 +1,18 @@
+{
+    "extends": "./tsconfig.build.json",
+    "files": [],
+    "references": [
+        { 
+            "path": "./packages/contract" 
+        }, 
+        { 
+            "path": "./packages/provider" 
+        }, 
+        { 
+            "path": "./packages/procaptcha" 
+        }, 
+        { 
+            "path": "./packages/procaptcha-react" 
+        }
+    ]
+}

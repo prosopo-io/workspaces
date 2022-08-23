@@ -1,0 +1,24 @@
+[submodule "packages/contract"]
+	path = packages/contract
+	url = git@github.com:prosopo-io/contract.git
+	branch = develop
+[submodule "packages/procaptcha"]
+	path = packages/procaptcha
+	url = git@github.com:prosopo-io/procaptcha.git
+	branch = develop
+[submodule "packages/procaptcha-react"]
+	path = packages/procaptcha-react
+	url = git@github.com:prosopo-io/procaptcha-react.git
+	branch = develop
+[submodule "packages/provider"]
+	path = packages/provider
+	url = git@github.com:prosopo-io/provider.git
+	branch = develop
+[submodule "demos/client-example"]
+	path = demos/client-example
+	url = git@github.com:prosopo-io/client-example.git
+	branch = develop
+[submodule "demos/demo-nft-marketplace"]
+	path = demos/demo-nft-marketplace
+	url = git@github.com:prosopo-io/demo-nft-marketplace.git
+	branch = develop
