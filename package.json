@@ -47,5 +47,8 @@
   },
   "homepage": "https://github.com/prosopo-io/integration#readme",
   "keywords": [],
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "8.22.0"
+  }
 }
