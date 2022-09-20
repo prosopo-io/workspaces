@@ -1,24 +1,24 @@
-# Integration
-Integrates prosopo repositories in a development environment
+# Workspaces
+Integrates prosopo JavaScript repositories in an npm workspace for development and testing.
 
-- [protocol](https://github.com/prosopo-io/protocol/)
+
 - [provider](https://github.com/prosopo-io/provider)
 - [contract](https://github.com/prosopo-io/contract)
 - [procaptcha](https://github.com/prosopo-io/procaptcha)
 - [procaptcha-react](https://github.com/prosopo-io/procaptcha-react)
 - [client-example](https://github.com/prosopo-io/client-example)
 - [demo-nft-marketplace](https://github.com/prosopo-io/demo-nft-marketplace)
-- [dapp-example](https://github.com/prosopo-io/dapp-example)
 
 # Prerequisites
 - ability to run bash scripts
 - docker (tested on v20.10.8 / v20.10.11/ v20.10.14, used 4CPUs, 6GB of memory, 2GB of swap)
 - [docker compose v2+](https://www.docker.com/blog/announcing-compose-v2-general-availability/)
+- [script repository](https://github.com/prosopo-io/scripts) cloned locally 
 
 # Usage
 
 ```bash
-git clone git@github.com:prosopo-io/integration.git
+git clone git@github.com:prosopo-io/workspaces.git
 ````
 
 ## Development Environment Set Up
@@ -36,10 +36,10 @@ git submodule update --init --recursive --force --checkout
 
 ### Set up Containers
 
-Setup your integration containers by running the following command from the root of the integration repository.
+Setup your integration containers by running the following command from the root of the [scripts](https://github.com/prosopo-io/scripts) repository.
 
 ```bash
-docker compose --file docker-compose.development.yml up -d
+docker compose --file ./docker/docker-compose.development.yml up -d
 ```
 
 This does the following:
