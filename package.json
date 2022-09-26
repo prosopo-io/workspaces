@@ -15,6 +15,7 @@
     "build:procaptcha": "npm -w @prosopo/procaptcha run clean && npm -w @prosopo/procaptcha run build",
     "build:procaptcha-react": "npm -w @prosopo/procaptcha-react run clean && npm -w @prosopo/procaptcha-react run build",
     "build:client-example": "npm -w client-example run build",
+    "watch": "tsc -b -v -w -i",
     "setup": "npm -w @prosopo/provider run setup",
     "start": "npm -w @prosopo/provider run start",
     "provider": "npm -w @prosopo/provider run cli",
