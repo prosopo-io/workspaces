@@ -14,6 +14,10 @@
 	path = packages/provider
 	url = git@github.com:prosopo-io/provider.git
 	branch = develop
+[submodule "packages/i18n"]
+	path = packages/i18n
+	url = git@github.com:prosopo-io/i18n.git
+	branch = develop
 [submodule "demos/client-example"]
 	path = demos/client-example
 	url = git@github.com:prosopo-io/client-example.git

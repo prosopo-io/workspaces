@@ -6,6 +6,9 @@
             "path": "./packages/contract" 
         }, 
         { 
+            "path": "./packages/i18n" 
+        }, 
+        { 
             "path": "./packages/provider" 
         }, 
         { 
