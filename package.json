@@ -26,7 +26,7 @@
     "lint:fix": "npm run lint:fix --workspaces --if-present",
     "populate-data": "npm -w @prosopo/provider run populate-data",
     "git-sync": "git submodule foreach -q --recursive 'echo $sm_path && git switch $(git config -f $toplevel/.gitmodules submodule.$name.branch || echo main)'",
-    "git-dev": "git submodule foreach -q --recursive 'echo $sm_path && git switch $(echo 'develop')'",
+    "git-dev": "git submodule foreach -q --recursive 'echo $sm_path && git switch $(echo 'develop') && git pull'",
     "git-branch": "git submodule foreach -q --recursive 'echo $sm_path && git switch $(echo '$BRANCH')"
   },
   "private": true,
