@@ -18,6 +18,10 @@
 	path = packages/i18n
 	url = git@github.com:prosopo-io/i18n.git
 	branch = develop
+[submodule "packages/datasets"]
+    path = packages/datasets
+    url = git@github.com:prosopo-io/datasets.git
+    branch = develop
 [submodule "demos/client-example"]
 	path = demos/client-example
 	url = git@github.com:prosopo-io/client-example.git
