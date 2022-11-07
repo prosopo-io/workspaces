@@ -1,6 +1,5 @@
 {
     "extends": "./tsconfig.build.json",
-    "files": [],
     "references": [
         { 
             "path": "./packages/contract" 
@@ -16,6 +15,13 @@
         }, 
         { 
             "path": "./packages/procaptcha-react" 
+        },
+        { 
+            "path": "./packages/api" 
+        },
+        { 
+            "path": "./packages/datasets" 
         }
-    ]
+    ],
+    "files": []
 }
