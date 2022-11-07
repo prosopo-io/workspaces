@@ -2,12 +2,15 @@
 Integrates prosopo JavaScript repositories in an npm workspace for development and testing.
 
 
-- [provider](https://github.com/prosopo/provider)
-- [contract](https://github.com/prosopo/contract)
-- [procaptcha](https://github.com/prosopo/procaptcha)
-- [procaptcha-react](https://github.com/prosopo/procaptcha-react)
-- [client-example](https://github.com/prosopo/client-example)
-- [demo-nft-marketplace](https://github.com/prosopo/demo-nft-marketplace)
+- [provider](https://github.com/prosopo/provider) - provides CAPTCHA challenges and content.
+- [contract](https://github.com/prosopo/contract) - houses code to interact with the smart contract(s).
+- [api](https://github.com/prosopo/api) - houses code to interact with the provider API.
+- [procaptcha](https://github.com/prosopo/procaptcha) - manages the CAPTCHA challenge, content and state.
+- [procaptcha-react](https://github.com/prosopo/procaptcha-react) - presents the CAPTCHA challenge in a React component.
+- [client-example](https://github.com/prosopo/client-example) - an example of how to use Procaptcha on a website.
+- [demo-nft-marketplace](https://github.com/prosopo/demo-nft-marketplace) - an example of how to use Procaptcha on a web3 website.
+- [common](https://github.com/prosopo/datasets) - a common repo containing types and utils used throughout Prosopo. Also contains dataset production methods.
+- [locale](https://github.com/prosopo/i18n) - translations for locale-based content.
 
 # Prerequisites
 - ability to run bash scripts
