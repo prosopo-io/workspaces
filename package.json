@@ -26,9 +26,19 @@
     "lint": "npm run lint --workspaces --if-present",
     "lint:fix": "npm run lint:fix --workspaces --if-present",
     "populate-data": "npm -w @prosopo/provider run populate-data",
-    "git-sync": "git submodule foreach -q --recursive 'echo $sm_path && git switch $(git config -f $toplevel/.gitmodules submodule.$name.branch || echo main)'",
-    "git-dev": "git submodule foreach -q --recursive 'echo $sm_path && git switch $(echo 'develop') && git pull'",
-    "git-branch": "git submodule foreach -q --recursive 'echo $sm_path && git switch $(echo '$BRANCH')"
+    "fetch": "git submodule foreach -q --recursive git fetch",
+    "pull": "npm run git:fetch && git submodule foreach -q --recursive git pull",
+    "push": "git submodule foreach -q --recursive git push",
+    "status": "git submodule foreach -q --recursive git status",
+    "commit": "git submodule foreach -q --recursive git commit -m",
+    "checkout": "git submodule foreach -q --recursive git checkout",
+    "branch": "git submodule foreach -q --recursive git checkout -B",
+    "stash": "git submodule foreach -q --recursive git stash push -m",
+    "unstash": "git submodule foreach -q --recursive git stash pop",
+    "stash:pop": "npm run unstash",
+    "stash:drop": "git submodule foreach -q --recursive git stash drop",
+    "stash:clear": "git submodule foreach -q --recursive git stash drop",
+    "version": "npm --no-git-tag-version --allow-same-version --workspaces --workspaces-update version $VERSION"
   },
   "private": true,
   "engines": {
