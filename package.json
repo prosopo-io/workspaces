@@ -9,7 +9,8 @@
   },
   "scripts": {
     "clean": "find . -name \"node_modules\" -type d -prune -exec rm -rf '{}' + && find . -name \"dist\" -type d -prune -exec rm -rf '{}' + && find . -name \"package-lock.json\" -type f -delete",
-    "build": "npm run build:contract && npm run build:i18n && npm run build:datasets && npm run build:provider && npm run build:procaptcha && npm run build:procaptcha-react",
+    "build": "npm run build:i18n && npm run build:datasets && npm run build:contract && npm run build:api && npm run build:provider && npm run build:procaptcha && npm run build:procaptcha-react",
+    "build:api": "npm -w @prosopo/api run clean && npm -w @prosopo/api run build",
     "build:contract": "npm -w @prosopo/contract run clean && npm -w @prosopo/contract run build",
     "build:provider": "npm -w @prosopo/provider run clean && npm -w @prosopo/provider run build",
     "build:procaptcha": "npm -w @prosopo/procaptcha run clean && npm -w @prosopo/procaptcha run build",
@@ -25,9 +26,20 @@
     "lint": "npm run lint --workspaces --if-present",
     "lint:fix": "npm run lint:fix --workspaces --if-present",
     "populate-data": "npm -w @prosopo/provider run populate-data",
-    "git-sync": "git submodule foreach -q --recursive 'echo $sm_path && git switch $(git config -f $toplevel/.gitmodules submodule.$name.branch || echo main)'",
-    "git-dev": "git submodule foreach -q --recursive 'echo $sm_path && git switch $(echo 'develop') && git pull'",
-    "git-branch": "git submodule foreach -q --recursive 'echo $sm_path && git switch $(echo '$BRANCH')"
+    "fetch": "git submodule foreach -q --recursive git fetch",
+    "pull": "npm run fetch && git submodule foreach -q --recursive 'git pull || :'",
+    "push": "git submodule foreach -q --recursive git push",
+    "status": "git submodule foreach -q --recursive git status",
+    "commit": "git submodule foreach -q --recursive 'git commit -a -m \"$1\" || :'",
+    "checkout": "git submodule foreach -q --recursive git checkout",
+    "branch": "git submodule foreach -q --recursive git checkout -B",
+    "merge": "git submodule foreach -q --recursive 'git merge \"$1\" || :'",
+    "stash": "git submodule foreach -q --recursive git stash push -m",
+    "unstash": "git submodule foreach -q --recursive git stash pop",
+    "stash:pop": "npm run unstash",
+    "stash:drop": "git submodule foreach -q --recursive git stash drop",
+    "stash:clear": "git submodule foreach -q --recursive git stash drop",
+    "version": "npm --no-git-tag-version --allow-same-version --workspaces --workspaces-update version $VERSION"
   },
   "private": true,
   "engines": {
