@@ -50,7 +50,7 @@
     "delete:remote": "f() { git submodule foreach --recursive \"git push origin --delete $1 || :\" ;}; f",
     "purge:local": "git submodule foreach --recursive \"git branch | grep -v develop | grep -v master | grep -v main | xargs git branch -D || :\"",
     "stash": "git submodule foreach --recursive git stash push",
-    "stash:named": "git submodule foreach --recursive git stash push",
+    "stash:named": "git submodule foreach --recursive git stash push -m",
     "unstash": "git submodule foreach --recursive git stash pop",
     "stash:pop": "npm run unstash",
     "stash:drop": "git submodule foreach --recursive git stash drop",
