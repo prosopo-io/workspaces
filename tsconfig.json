@@ -4,7 +4,13 @@
     "references": [
         { 
             "path": "./packages/contract" 
-        }, 
+        },
+        { 
+            "path": "./packages/api" 
+        },
+        { 
+            "path": "./packages/datasets" 
+        },
         { 
             "path": "./packages/i18n" 
         }, 
