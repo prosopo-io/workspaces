@@ -3,10 +3,14 @@ Integrates prosopo JavaScript repositories in an npm workspace for development a
 
 
 - [provider](https://github.com/prosopo/provider)
+- [api](https://github.com/prosopo/api)
+- [datasets](https://github.com/prosopo/datasets)
+- [i18n](https://github.com/prosopo/i18n)
 - [contract](https://github.com/prosopo/contract)
 - [procaptcha](https://github.com/prosopo/procaptcha)
 - [procaptcha-react](https://github.com/prosopo/procaptcha-react)
 - [client-example](https://github.com/prosopo/client-example)
+- [client-example-server](https://github.com/prosopo/client-example-server)
 - [demo-nft-marketplace](https://github.com/prosopo/demo-nft-marketplace)
 
 # Prerequisites
