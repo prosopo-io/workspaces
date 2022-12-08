@@ -15,7 +15,7 @@
 	url = git@github.com:prosopo/provider.git
 	branch = develop
 [submodule "packages/i18n"]
-	path = packages/i18n
+	path = packages/common
 	url = git@github.com:prosopo/i18n.git
 	branch = develop
 [submodule "packages/datasets"]
