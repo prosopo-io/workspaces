@@ -56,7 +56,7 @@
     "delete": "f() { npm run --silent gitmod -- git branch -d $1 ;}; f",
     "delete:force": "f() { npm run --silent gitmod -- git branch -D $1 ;}; f",
     "delete:remote": "f() { npm run --silent gitmod -- git push origin --delete $1 ;}; f",
-    "purge:local": "npm run --silent gitmod -- git branch | grep -v develop | grep -v master | grep -v main | xargs git branch -D",
+    "purge:local": "npm run --silent gitmod -- \"git branch | grep -v develop | grep -v master | grep -v main | xargs git branch -D\"",
     "pr": "f() { npm run --silent gitmod -- gh pr create --base develop --assignee \\\"@me\\\" --title \\\"$1\\\" --fill --reviewer \\\"$2\\\" ;}; f",
     "release": "f() { npm run --silent gitmod -- gh pr create --base main --assignee \\\"@me\\\" --title \\\"$1\\\" --fill --reviewer \\\"$2\\\" ;}; f",
     "stash": "npm run --silent gitmod -- git stash push",
