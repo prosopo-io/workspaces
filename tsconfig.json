@@ -12,7 +12,7 @@
             "path": "./packages/datasets" 
         },
         { 
-            "path": "./packages/i18n" 
+            "path": "./packages/common" 
         }, 
         { 
             "path": "./packages/provider" 
