@@ -36,3 +36,6 @@
 [submodule "packages/api"]
 	path = packages/api
 	url = git@github.com:prosopo/api.git
+[submodule "packages/server"]
+	path = packages/server
+	url = git@github.com:prosopo/server.git
