@@ -48,7 +48,7 @@
     "push": "npm run --silent gitmod -- git push -u origin HEAD",
     "status": "npm run --silent gitmod -- git status",
     "commit": "npm run --silent gitmod -- git commit -m",
-    "branch": "f() { npm run --silent gitmod -- \"git switch -C $1 &&git  git switch -C $1 origin/$1 || :\" ;}; f",
+    "branch": "f() { npm run --silent gitmod -- \"git switch -C $1 && git switch -C $1 origin/$1 || :\" ;}; f",
     "checkout": "npm run branch",
     "merge": "npm run --silent gitmod -- git merge --autostash",
     "merge:continue": "npm run --silent gitmod -- git merge --continue",
