@@ -48,7 +48,7 @@
     "push": "npm run --silent gitmod -- git push -u origin HEAD",
     "status": "npm run --silent gitmod -- git status",
     "commit": "npm run --silent gitmod -- git commit -m",
-    "branch": "f() { npm run --silent gitmod -- \"git switch -C $1 && git switch -C $1 origin/$1 || :\" ;}; f",
+    "branch": "f() { npm run --silent gitmod -- \"git switch -C $1 &&git  git switch -C $1 origin/$1 || :\" ;}; f",
     "checkout": "npm run branch",
     "merge": "npm run --silent gitmod -- git merge --autostash",
     "merge:continue": "npm run --silent gitmod -- git merge --continue",
@@ -74,7 +74,7 @@
     "demo": "npm -w @prosopo/client-example run start",
     "provider": "npm -w @prosopo/provider run cli",
     "populate-data": "npm -w @prosopo/provider run populate-data",
-    "test": "npm run remove-test-container && docker compose --file docker-compose.test.yml up -d substrate-test-node && npm -w @prosopo/provider run test",
+    "test": "npm -w @prosopo/provider run test",
     "lint": "npm run lint --workspaces --if-present",
     "lint:fix": "npm run lint:fix --workspaces --if-present"
   },
