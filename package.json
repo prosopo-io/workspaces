@@ -74,7 +74,7 @@
     "demo": "npm -w @prosopo/client-example run start",
     "provider": "npm -w @prosopo/provider run cli",
     "populate-data": "npm -w @prosopo/provider run populate-data",
-    "test": "npm run remove-test-container && docker compose --file docker-compose.test.yml up -d substrate-test-node && npm -w @prosopo/provider run test",
+    "test": "npm -w @prosopo/provider run test",
     "lint": "npm run lint --workspaces --if-present",
     "lint:fix": "npm run lint:fix --workspaces --if-present"
   },
