@@ -66,7 +66,7 @@
     "stash:pop": "npm run --silent unstash",
     "stash:drop": "npm run --silent gitmod -- git stash drop",
     "stash:clear": "npm run --silent gitmod -- git stash clear",
-    "version": "npm --no-git-tag-version --allow-same-version --workspaces --workspaces-update version && npm --no-git-tag-version --allow-same-version version",
+    "version": "npm --no-git-tag-version --allow-same-version --workspaces --workspaces-update version",
     "ls:ws": "npm run --workspaces env | grep npm_package_name | cut -d '=' -f 2",
     "setup": "npm -w @prosopo/provider run setup",
     "start": "npm -w @prosopo/provider run start",
