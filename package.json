@@ -47,7 +47,7 @@
     "pull": "npm run --silent gitmod -- 'git pull origin $(git symbolic-ref --short HEAD)'",
     "push": "npm run --silent gitmod -- git push -u origin HEAD",
     "status": "npm run --silent gitmod -- git status",
-    "commit": "npm run --silent gitmod -- git commit -m",
+    "commit": "npm run --silent gitmod -- git commit -a -m",
     "branch": "f() { npm run --silent gitmod -- \"git switch -C $1 && git switch -C $1 origin/$1 || :\" ;}; f",
     "checkout": "npm run branch",
     "merge": "npm run --silent gitmod -- git merge --autostash",
