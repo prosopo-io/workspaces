@@ -68,7 +68,7 @@
     "stash:clear": "npm run --silent gitmod -- git stash clear",
     "version": "npm --no-git-tag-version --allow-same-version --workspaces --workspaces-update version",
     "ls:ws": "npm run --workspaces env | grep npm_package_name | cut -d '=' -f 2",
-    "setup": "npm -w @prosopo/provider run setup",
+    "setup": "npm -w @prosopo/dev run setup",
     "start": "npm -w @prosopo/provider run start",
     "server": "npm -w @prosopo/client-example-server run start",
     "demo": "npm -w @prosopo/client-example run start",
