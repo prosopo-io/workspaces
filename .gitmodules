@@ -43,6 +43,6 @@
 	path = packages/dev
 	url = git@github.com:prosopo/dev.git
 [submodule "packages/types"]
-        path = packages/types
-        url = git@github.com:prosopo/types.git
+	path = packages/types
+	url = git@github.com:prosopo/types.git
 
