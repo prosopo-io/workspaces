@@ -22,6 +22,8 @@
     "rebuild+deps": "f() { npm run rebuild $(npm run --silent deps $@) ;}; f",
     "rd": "npm run --silent rebuild+deps",
     "rebuild:npm": "npm run clean:npm && npm i",
+    "deploy_protocol": "npm run -w @prosopo/dev cli deploy_protocol -- --logLevel=Debug --update_env",
+    "deploy_dapp": "npm run -w @prosopo/dev cli deploy_dapp -- --logLevel=Debug --update_env",
     "deps": "f() { for arg in $@; do deps=$(npm run --silent deps:$arg); (f $deps); echo -n \" $arg\"; done ;}; g() { pkgs=$(f $@); pkgs=$(echo $pkgs | tr ' ' '\n' | awk '!a[$0]++' | tr '\n' ' '); echo $pkgs ;}; g",
     "deps:contract": "echo common datasets",
     "deps:datasets": "echo common",
