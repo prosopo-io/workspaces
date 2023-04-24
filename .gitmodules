@@ -39,3 +39,10 @@
 [submodule "packages/server"]
 	path = packages/server
 	url = git@github.com:prosopo/server.git
+[submodule "packages/dev"]
+	path = packages/dev
+	url = git@github.com:prosopo/dev.git
+[submodule "packages/types"]
+	path = packages/types
+	url = git@github.com:prosopo/types.git
+
